@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click N' Go | Online Ticket Booking</title>
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><span>C</span>lick N' Go</a>
+        </div>
+        <nav>
+            <ul>
+                <h3><a href="booking.html">Booking</a></h3>
+                <h3><a href="ticket.html">Ticket</a></h3>
+                <h3><a href="help.html">Help</a></h3>
+            </ul>
+            <div class="button">
+                <a href="#">SignUp</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-container">
+            <h3 class="title">Select your convince for traveling</h3>
+        <div class="container">
+            <div class="row1">
+                <div class="car card option" onclick="redirectToBooking('car')">
+                    <div class="inner">
+                        <img class="logo" src="imgs/car-solid.svg" alt="Car-Logo">
+                        <h4>Car</h4>
+                    </div>
+                </div>
+                <div class="bus card option" onclick="redirectToBooking('bus')">
+                    <div class="inner">
+                        <img class="logo" src="imgs/bus-solid.svg" alt="Bus-Logo">
+                        <h4>Bus</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row2">
+                <div class="train card option" onclick="redirectToBooking('train')">
+                    <div class="inner">
+                        <img class="logo" src="imgs/train-subway-solid.svg" alt="Train-Logo">
+                        <h4>Train</h4>
+                    </div>
+                </div>
+                <div class="aeroplane card option" onclick="redirectToBooking('aeroplane')">
+                    <div class="inner">
+                        <img class="logo" src="imgs/plane-departure-solid.svg" alt="Plane-Logo">
+                        <h4>Aeroplane</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

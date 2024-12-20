@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click N' Go | Online Ticket Booking</title>
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/ticket.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><span>C</span>lick N' Go</a>
+        </div>
+        <nav>
+            <ul>
+                <h3><a href="booking.html">Booking</a></h3>
+                <h3><a href="ticket.html">Ticket</a></h3>
+                <h3><a href="help.html">Help</a></h3>
+            </ul>
+            <div class="button">
+                <a href="#">SignUp</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-container">
+            <div class="inner-container">
+                <h3 class="main-heading">Ticket</h3>
+                <div class="ticket">
+                    <div class="inner-heading">
+                        <h5>[ Ticket Details ]</h5>
+                    </div>
+                    <div class="display">
+                        <h4>Departure: <span class="afterWords" id="tripDeparture">Location</span></h4>
+                        <h4>Destination: <span class="afterWords" id="tripDestination">Location</span></h4>
+                        <h4>Trip Date: <span class="afterWords" id="tripDate">Date</span></h4>
+                        
+                        <h3>Total price: <span class="price">$ <span id="invoice">000</span></span></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

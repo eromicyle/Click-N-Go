@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click N' Go | Online Ticket Booking</title>
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/booking.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><span>C</span>lick N' Go</a>
+        </div>
+        <nav>
+            <ul>
+                <h3><a href="booking.html">Booking</a></h3>
+                <h3><a href="ticket.html">Ticket</a></h3>
+                <h3><a href="help.html">Help</a></h3>
+            </ul>
+            <div class="button">
+                <a href="#">SignUp</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- <h4 id="title"></h4>
+        <p id="description"></p> -->
+
+        <div class="main-container">
+            <div class="inner-container">
+                <div class="heading-top">
+                    <h3>Booking</h3>
+                </div>
+                <div class="booking-form">
+                    <div class="text">
+                        <h4>Search for <span id="booking-title">Convince</span></h4>
+                        <p>Find the best deals for your <span id="description">Convince</span> Trip</p>
+                    </div>
+                    <div class="options">
+                        <!-- action="/submit" method="post" -->
+                        <form id="bookingForm"> 
+                            <div class="row">
+                                <label for="departure"></label>
+                                <select name="departure" class="style" id="departure" required>
+                                    <option value="" disabled selected style="display:none;">From:</option>
+                                    <option value="islamabad">Islamabad</option>
+                                    <option value="lahore">Lahore</option>
+                                    <option value="karachi">Karachi</option>
+                                    <option value="peshawar">Peshawar</option>
+                                    <option value="faisalabad">Faisalabad</option>
+                                    <option value="sawat">Sawat</option>
+                                    <option value="chitral">Chitral</option>
+                                    <option value="abbottabad">Abbottabad</option>
+                                    <option value="multan">Multan</option>
+                                    <option value="sialkot">Sialkot</option>
+                                </select>
+
+                                <label for="destination"></label>
+                                <select name="destination" class="style" id="destination" required>
+                                    <option value="" disabled selected style="display:none;">To:</option>
+                                    <option value="islamabad">Islamabad</option>
+                                    <option value="lahore">Lahore</option>
+                                    <option value="karachi">Karachi</option>
+                                    <option value="peshawar">Peshawar</option>
+                                    <option value="faisalabad">Faisalabad</option>
+                                    <option value="sawat">Sawat</option>
+                                    <option value="chitral">Chitral</option>
+                                    <option value="abbottabad">Abbottabad</option>
+                                    <option value="multan">Multan</option>
+                                    <option value="sialkot">Sialkot</option>
+                                </select>
+                            </div>
+                            <div class="row">
+                                <label for="date"></label>
+                                <input type="date" name="date" class="style" id="date" required>
+                                <button type="button" class="button-submit" onclick="submitForm()">Book Trip</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

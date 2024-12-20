@@ -1,0 +1,225 @@
+:root {
+    --main-color: #EFEAE3;
+    --text-color: #1d1f21 ;
+    --accent-color: #FE330A;
+    --divider-color: #2c2c2c85;
+    --secondary-color: #B0B0B0;
+    --extra-color: #61E29D;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Calibri, 'Trebuchet MS', sans-serif
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    color: var(--text-color);
+    background-color: var(--main-color);
+}
+
+header, nav, ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    height: 10vh;
+    width: 100vw;
+    background: transparent;
+    backdrop-filter: blur(7rem);
+    padding: 2rem 1.9rem;
+    border-bottom: dotted var(--accent-color) 1px;
+}
+
+header .logo a {
+    color: var(--text-color);
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: -1px;
+    word-spacing: -1px;
+    position: relative;
+}
+
+header .logo a span {
+    font-size: 2.2rem;
+}
+
+header .logo a::after {
+    content: ' ';
+    position: absolute;
+    background-color: var(--accent-color);
+    bottom: 10%;
+    transform: translateX(100%);
+    left: -1%;
+    height: 3px;
+    border-radius: 60px;
+    transition: all 0.3s ease-in-out;
+    width: 0;
+}
+
+header .logo a:hover::after {
+    left: -1%;
+    transform: translateX(0);
+    bottom: 10%;
+    width: 105%;
+}
+
+header nav ul h3 {
+    margin-left: 1rem;
+    border-radius: 21px;
+    padding: .6rem 1.3rem;
+    border: solid var(--divider-color) 1.5px;
+    position: relative;
+    z-index: 1001;
+    overflow: hidden;
+}
+
+header nav ul h3::after {
+    content: ' ';
+    background: var(--text-color);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+    bottom: -100%;
+    z-index: 0;
+    left: 0;
+}
+
+header nav ul h3:hover::after {
+    transform: scale(1);
+    bottom: 0;
+    border-radius: 0;
+    z-index: 0;
+}
+
+header nav ul h3 a {
+    color: var(--text-color);
+    font-size: 19px;
+    z-index: 1001;
+    position: relative;
+}
+
+header nav ul h3:hover a {
+    color: var(--main-color);
+}
+
+header nav .button {
+    margin-left: 1.7rem;
+    border: solid var(--accent-color) 1.5px;
+    border-radius: 21px;
+    padding: 0.45rem 1.5rem;
+    overflow: hidden;
+    position: relative;
+    z-index: 1001;
+}
+
+header nav .button a {
+    color: var(--text-color);
+    font-size: 1.6rem;
+    font-weight: 600;
+    position: relative;
+    z-index: 1001;
+}
+
+header nav .button::after {
+    content: ' ';
+    background: var(--accent-color);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+    bottom: -100%;
+    z-index: 10;
+    left: 0;
+}
+
+header nav .button:hover::after {
+    transform: scale(1);
+    bottom: 0;
+    border-radius: 0;
+    z-index: 10;
+}
+
+header nav .button:hover a {
+    color: var(--main-color);
+}
+
+main .main-container .inner-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+    align-items: center;
+    padding-top: 2rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main .main-container .inner-container .main-heading {
+    font-size: 2.1rem;
+    font-weight: 900;
+    margin-bottom: 3.7rem;
+}
+
+main .main-container .inner-container .ticket {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 14px 19px;
+    justify-content:flex-start;
+    height: 490px;
+    border: dotted var(--divider-color) 2px;
+    border-radius: 27px;
+    width: 360px;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 2px 3px 5px 3px var(--secondary-color);
+    transition: all 0.2s ease-in-out;
+}
+
+main .main-container .inner-container .ticket:hover {
+    transform: scale(1.01);
+}
+
+main .main-container .inner-container .ticket .inner-heading h5 {
+    font-size: 21px;
+    font-weight: 700;
+    margin: 0 87px 127px 87px;
+}
+
+main .main-container .inner-container .ticket .display h4{
+    font-size: 23px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+main .main-container .inner-container .ticket .display h4 .afterWords {
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 9px;
+
+}
+
+main .main-container .inner-container .ticket .display h4:nth-child(3){
+    margin-bottom: 157px;
+}
+
+main .main-container .inner-container .ticket .display h3{
+    font-size: 23.5px;
+}
+
+main .main-container .inner-container .ticket .display h3 .price {
+    font-family: monospace;
+    word-spacing: -13px;
+    color: var(--accent-color);
+}
